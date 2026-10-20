@@ -4,6 +4,7 @@
 body{margin:0;font-family:Calibri,"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
   background:var(--grund);background-image:radial-gradient(1200px 700px at 50% -10%,#1c1c1c 0%,#0d0d0d 55%,#0a0a0a 100%);
   background-attachment:fixed;color:var(--text);line-height:1.6;font-size:17px;min-height:100vh;display:flex;flex-direction:column}
+html{background:var(--grund)}
 main{flex:1}
 a{color:var(--neon);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -28,3 +29,8 @@ code{font-family:Consolas,monospace;font-size:15px;color:var(--text)}
 [hidden]{display:none !important}
 footer{border-top:1px solid var(--rand);padding:30px 0 40px;text-align:center}
 .recht{color:#7a7a7a;font-size:13px;margin:0}
+
+/* Phones: Safari on the iPhone floats its toolbar over the bottom of the page — leave room so
+   the last links scroll above it, and give them a tap area of about 30 points. */
+.recht a{display:inline-block;padding:7px 4px}
+@media (max-width:700px){footer{padding-bottom:110px}}
