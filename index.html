@@ -5,38 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0d0d0d">
 <meta name="color-scheme" content="dark">
-<title data-de="Xharig — Werkzeuge für Star Citizen" data-en="Xharig — Star Citizen tools">Xharig — Star Citizen tools</title>
-<meta name="description" content="Free Star Citizen fan tools by Xharig: Verse-Kit (blueprints, crafting, mining, trading) and VerseSpotter (learn to recognise ships).">
+<!-- German page. en/index.html is generated from this file by tools/seite_en_bauen.py: it takes
+     every data-en text and every data-en-<attribute> value. After changing this file, run the script. -->
+<title data-de="Xharig — Werkzeuge für Star Citizen" data-en="Xharig — Star Citizen tools">Xharig — Werkzeuge für Star Citizen</title>
+<meta name="description" content="Kostenlose Fan-Werkzeuge für Star Citizen von Xharig: Verse-Kit (Baupläne, Crafting, Bergbau, Handel) und VerseSpotter (Schiffe erkennen lernen)." data-en-content="Free Star Citizen fan tools by Xharig: Verse-Kit (blueprints, crafting, mining, trading) and VerseSpotter (learn to recognise ships).">
+<link rel="canonical" href="https://xharig.com/">
+<link rel="alternate" hreflang="de" href="https://xharig.com/">
+<link rel="alternate" hreflang="en" href="https://xharig.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://xharig.com/en/">
 <link rel="icon" href="assets/versespotter-logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/start.css?v=2">
+<link rel="stylesheet" href="assets/start.css?v=3">
 </head>
 <body>
 <header>
   <div class="mitte">
     <div class="sprache" role="group" aria-label="Sprache / Language">
-      <button type="button" data-lang="de" lang="de">DE</button>
-      <button type="button" data-lang="en" lang="en">EN</button>
+      <a href="/" data-lang="de" hreflang="de" lang="de" class="an">DE</a>
+      <a href="/en/" data-lang="en" hreflang="en" lang="en">EN</a>
     </div>
   </div>
 </header>
+
+<div class="hinweis-sprache" id="hinweis-sprache" hidden>
+  <div class="mitte">
+    <span id="hinweis-sprache-text"></span>
+    <a id="hinweis-sprache-link" href="/en/"></a>
+    <button type="button" id="hinweis-sprache-zu">×</button>
+  </div>
+</div>
 
 <main>
   <div class="kopf">
     <div class="kreis a"></div>
     <div class="mitte">
       <h1>Xharig</h1>
-      <p data-de="Kostenlose Werkzeuge für Star Citizen" data-en="Free tools for Star Citizen"></p>
+      <p data-de="Kostenlose Werkzeuge für Star Citizen" data-en="Free tools for Star Citizen">Kostenlose Werkzeuge für Star Citizen</p>
     </div>
   </div>
 
   <div class="mitte kacheln">
-    <a class="kachel" href="https://versekit.xharig.com/?von=xharig">
+    <a class="kachel" href="https://versekit.xharig.com/?von=xharig" data-en-href="https://versekit.xharig.com/en/?von=xharig">
       <span class="hintergrund versekit"></span>
       <span class="inhalt">
         <span class="zeile"><img src="assets/versekit-icon.png" alt=""><h2>Verse-Kit</h2></span>
         <p data-de="Baupläne live im Blick — dazu Aufträge, Herstellung, Bergbau, Handel und Hangar. Für Windows und Linux."
-           data-en="Blueprints live while you play — plus contracts, crafting, mining, trading and hangar. For Windows and Linux."></p>
-        <span class="knopf"><span data-de="Zur Seite" data-en="Visit"></span><span class="pfeil" aria-hidden="true"></span></span>
+           data-en="Blueprints live while you play — plus contracts, crafting, mining, trading and hangar. For Windows and Linux.">Baupläne live im Blick — dazu Aufträge, Herstellung, Bergbau, Handel und Hangar. Für Windows und Linux.</p>
+        <span class="knopf"><span data-de="Zur Seite" data-en="Visit">Zur Seite</span><span class="pfeil" aria-hidden="true"></span></span>
       </span>
     </a>
     <a class="kachel" href="https://versespotter.xharig.com/?von=xharig">
@@ -44,8 +58,8 @@
       <span class="inhalt">
         <span class="zeile"><img src="assets/versespotter-logo.svg" alt=""><h2>VerseSpotter</h2></span>
         <p data-de="Schiffe erkennen lernen — am Hologramm im HUD und an der Silhouette im Flug. Direkt im Browser."
-           data-en="Learn to recognise ships — by their HUD hologram and silhouette in flight. Right in your browser."></p>
-        <span class="knopf"><span data-de="Zur Seite" data-en="Visit"></span><span class="pfeil" aria-hidden="true"></span></span>
+           data-en="Learn to recognise ships — by their HUD hologram and silhouette in flight. Right in your browser.">Schiffe erkennen lernen — am Hologramm im HUD und an der Silhouette im Flug. Direkt im Browser.</p>
+        <span class="knopf"><span data-de="Zur Seite" data-en="Visit">Zur Seite</span><span class="pfeil" aria-hidden="true"></span></span>
       </span>
     </a>
   </div>
@@ -59,6 +73,6 @@
   </div>
 </footer>
 
-<script src="assets/sprache.js"></script>
+<script src="assets/sprache.js?v=2"></script>
 </body>
 </html>

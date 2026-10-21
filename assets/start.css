@@ -12,8 +12,15 @@ a{color:var(--neon);text-decoration:none}
 @media (max-width:600px){.mitte{padding:0 16px}}
 header .mitte{display:flex;justify-content:flex-end;height:64px;align-items:center}
 .sprache{display:flex;border:1px solid var(--rand);border-radius:999px;overflow:hidden}
-.sprache button{background:none;border:0;color:var(--text-leise);font:inherit;font-size:14px;padding:5px 13px;cursor:pointer}
-.sprache button.an{background:var(--neon);color:#0a0a0a;font-weight:700}
+.sprache button,.sprache a{background:none;border:0;color:var(--text-leise);font:inherit;font-size:14px;padding:5px 13px;cursor:pointer}
+.sprache a:hover{color:var(--neon)}
+.sprache button.an,.sprache a.an{background:var(--neon);color:#0a0a0a;font-weight:700}
+/* Offers the other language version (assets/sprache.js) */
+.hinweis-sprache{background:var(--flaeche);border-top:1px solid var(--rand);border-bottom:1px solid var(--rand);font-size:15px}
+.hinweis-sprache .mitte{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.hinweis-sprache a{font-weight:700}
+.hinweis-sprache button{margin-left:auto;background:none;border:0;color:var(--text-leise);font:inherit;font-size:20px;line-height:1;padding:2px 6px;cursor:pointer}
+.hinweis-sprache button:hover{color:var(--neon)}
 .kopf{text-align:center;padding:30px 0 40px;position:relative;overflow:hidden}
 .kopf h1{font-size:52px;font-weight:800;margin:0 0 8px;letter-spacing:.5px}
 .kopf p{font-size:20px;color:var(--text-leise);margin:0}
