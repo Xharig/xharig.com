@@ -8,19 +8,21 @@
 
 <sub>statische Seite · Deutsch und Englisch · ohne Cookies</sub>
 
-[![Webseite](https://img.shields.io/badge/Webseite-xharig.com-5fa522)](https://xharig.com/)
-[![Lizenz](https://img.shields.io/badge/Lizenz-GPL--3.0-5fa522)](LICENSE)
-[![Discord](https://img.shields.io/badge/Discord-beitreten-5fa522?logo=discord&logoColor=white)](https://xharig.com/discord)
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Kaffee%20spendieren-5fa522?logo=kofi&logoColor=white)](https://ko-fi.com/xharig)
+[![Webseite](https://img.shields.io/badge/Webseite-xharig.com-9ce430?labelColor=161c28)](https://xharig.com/)
+[![Lizenz](https://img.shields.io/badge/Lizenz-GPL--3.0-9ce430?labelColor=161c28)](LICENSE)
+[![Discord](https://img.shields.io/badge/Discord-beitreten-9ce430?labelColor=161c28&logo=discord&logoColor=9ce430)](https://xharig.com/discord)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Kaffee%20spendieren-9ce430?labelColor=161c28&logo=kofi&logoColor=9ce430)](https://ko-fi.com/xharig)
 <br>
-[![HTML](https://img.shields.io/badge/HTML-CSS-0a4a7a)](https://xharig.com/)
-[![Star Citizen](https://img.shields.io/badge/Star%20Citizen-kompatibel-0a4a7a)](https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2)
+[![HTML](https://img.shields.io/badge/HTML-CSS-34415a?labelColor=161c28)](https://xharig.com/)
+[![Star Citizen](https://img.shields.io/badge/Star%20Citizen-kompatibel-34415a?labelColor=161c28)](https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2)
 
 **Deutsch** · [English](https://github.com/Xharig/xharig.com/blob/main/README.en.md)
 
 </div>
 
 ---
+
+<img src="assets/readme-kopf.png" alt="xharig.com am PC und am Handy" width="100%">
 
 Von hier geht es zu den beiden Werkzeugen:
 
