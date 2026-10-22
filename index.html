@@ -59,7 +59,7 @@
 }
 </script>
 <link rel="icon" href="assets/versespotter-logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/start.css?v=5">
+<link rel="stylesheet" href="assets/start.css?v=6">
 </head>
 <body>
 <header>
@@ -118,7 +118,13 @@
         <p><span data-de="Im Spiel fliege ich mit der Organisation" data-en="In the game I fly with the organisation">Im Spiel fliege ich mit der Organisation</span> <a href="https://das-kartell.org/" lang="de" translate="no">Das Kartell</a>.</p>
         <div class="einladen">
           <p><span data-de="Neu in Star Citizen? Meldest du dich mit meinem Empfehlungscode" data-en="New to Star Citizen? Sign up with my referral code">Neu in Star Citizen? Meldest du dich mit meinem Empfehlungscode</span> <code translate="no">STAR-YC7L-S4W2</code> <span data-de="an, bekommst du nach dem Kauf eines Spielpakets 50.000 UEC Startguthaben im Spiel dazu." data-en="and you get 50,000 UEC of in-game credit after buying a game package.">an, bekommst du nach dem Kauf eines Spielpakets 50.000 UEC Startguthaben im Spiel dazu.</span></p>
-          <a class="knopf" href="https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2"><span data-de="Mit meinem Code anmelden" data-en="Sign up with my code">Mit meinem Code anmelden</span><span class="pfeil" aria-hidden="true"></span></a>
+          <p data-de="Gib den Code gern an Freunde weiter, die neu anfangen, sie bekommen dieselben 50.000 UEC."
+             data-en="Feel free to pass the code on to friends who are just starting, they get the same 50,000 UEC.">Gib den Code gern an Freunde weiter, die neu anfangen, sie bekommen dieselben 50.000 UEC.</p>
+          <div class="knopfreihe">
+            <a class="knopf" href="https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2"><span data-de="Mit meinem Code anmelden" data-en="Sign up with my code">Mit meinem Code anmelden</span><span class="pfeil" aria-hidden="true"></span></a>
+            <button type="button" class="knopf zweit" id="ref-teilen" data-code="STAR-YC7L-S4W2" data-link="https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2"><span data-de="Link weitergeben" data-en="Pass the link on">Link weitergeben</span></button>
+          </div>
+          <p class="ref-meldung" id="ref-meldung" aria-live="polite"></p>
         </div>
       </div>
       <ul class="grundsaetze">
@@ -145,5 +151,6 @@
 </footer>
 
 <script src="assets/sprache.js?v=2"></script>
+<script src="assets/teilen.js?v=1"></script>
 </body>
 </html>
