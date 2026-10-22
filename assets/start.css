@@ -43,6 +43,16 @@ header .mitte{display:flex;justify-content:flex-end;height:64px;align-items:cent
 .knopf{display:inline-flex;align-items:center;gap:9px;padding:11px 22px;border-radius:8px;font-weight:700;border:2px solid var(--neon);color:var(--neon)}
 .kachel:hover .knopf{background:var(--neon);color:#0a0a0a}
 .pfeil{width:1.1em;height:1.1em;background:currentColor;-webkit-mask:url(arrow-right.svg) center/contain no-repeat;mask:url(arrow-right.svg) center/contain no-repeat}
+.ueber{padding-bottom:64px}
+.ueber h2{font-size:26px;font-weight:800;margin:0 0 18px;padding-top:28px;border-top:1px solid var(--rand)}
+.ueber-spalten{display:grid;grid-template-columns:3fr 2fr;gap:36px;align-items:start}
+@media (max-width:760px){.ueber-spalten{grid-template-columns:1fr;gap:12px}}
+.ueber-text p{margin:0 0 14px}
+.grundsaetze{list-style:none;margin:0;padding:0}
+.grundsaetze li{padding:10px 0 10px 16px;border-left:2px solid var(--neon-tief);margin-bottom:10px;color:var(--text-leise)}
+.profile{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0;padding:0}
+.profile a{display:inline-block;padding:8px 16px;border:1px solid var(--rand);border-radius:8px;color:var(--text)}
+.profile a:hover{border-color:var(--neon);color:var(--neon)}
 footer{border-top:1px solid var(--rand);padding:36px 0 46px;text-align:center}
 .fankit{margin:0 auto 14px;width:110px;opacity:.85}
 .fan{color:var(--text-leise);font-size:13px;max-width:680px;margin:0 auto 12px;line-height:1.5}
