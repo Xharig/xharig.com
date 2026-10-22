@@ -31,7 +31,7 @@ From here you reach both tools:
 | <img src="assets/versekit-icon.png" alt="" width="32"> | **[VerseKit](https://versekit.xharig.com/)** | Overlay for blueprints, contracts, crafting and trade. Windows and Linux |
 | <img src="assets/versespotter-logo.svg" alt="" width="32"> | **[VerseSpotter](https://versespotter.xharig.com/)** | Learn to recognise ships, in your browser |
 
-The site is static and served through GitHub Pages.
+The site is static and served through GitHub Pages. Shared look of all three sites: `assets/basis.css`.
 
 **New to Star Citizen?** Sign up with my referral code [`STAR-YC7L-S4W2`](https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2) and you get 50,000 UEC of in-game credit after buying a game package.
 
@@ -45,7 +45,8 @@ The site is static and served through GitHub Pages.
 
 ## Thanks
 
-- **[Lucide](https://lucide.dev)**: the icons (ISC, see `assets/LICENSE-lucide.txt`).
+- **[Lucide](https://lucide.dev)**: the icons (ISC, see `assets/symbole/LICENSE-lucide.txt`).
+- **[Lato](https://www.latofonts.com/)**: the typeface, here as the subset “Xharig Sans” (SIL OFL, see `assets/schrift/OFL.txt` and `assets/schrift/README.txt`).
 
 <div align="center">
 

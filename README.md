@@ -31,7 +31,7 @@ Von hier geht es zu den beiden Werkzeugen:
 | <img src="assets/versekit-icon.png" alt="" width="32"> | **[VerseKit](https://versekit.xharig.com/)** | Overlay für Baupläne, Aufträge, Herstellung und Handel. Windows und Linux |
 | <img src="assets/versespotter-logo.svg" alt="" width="32"> | **[VerseSpotter](https://versespotter.xharig.com/)** | Schiffe erkennen lernen, im Browser |
 
-Die Seite ist statisch und läuft über GitHub Pages. Gemeinsames Aussehen aller drei Seiten: `assets/basis.css`. Schrift: Xharig Sans, eine Teilmenge von Lato (SIL OFL, siehe `assets/schrift/OFL.txt` und `assets/schrift/README.txt`). Symbole: [Lucide](https://lucide.dev) (ISC, siehe `assets/symbole/LICENSE-lucide.txt`).
+Die Seite ist statisch und läuft über GitHub Pages. Gemeinsames Aussehen aller drei Seiten: `assets/basis.css`.
 
 **Neu in Star Citizen?** Meldest du dich mit meinem Empfehlungscode [`STAR-YC7L-S4W2`](https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2) an, bekommst du nach dem Kauf eines Spielpakets 50.000 UEC Startguthaben im Spiel dazu.
 
@@ -45,7 +45,8 @@ Die Seite ist statisch und läuft über GitHub Pages. Gemeinsames Aussehen aller
 
 ## Dank
 
-- **[Lucide](https://lucide.dev)**: die Symbole (ISC, siehe `assets/LICENSE-lucide.txt`).
+- **[Lucide](https://lucide.dev)**: die Symbole (ISC, siehe `assets/symbole/LICENSE-lucide.txt`).
+- **[Lato](https://www.latofonts.com/)**: die Schrift, hier als Teilmenge „Xharig Sans“ (SIL OFL, siehe `assets/schrift/OFL.txt` und `assets/schrift/README.txt`).
 
 <div align="center">
 
