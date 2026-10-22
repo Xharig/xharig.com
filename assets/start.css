@@ -48,6 +48,10 @@ header .mitte{display:flex;justify-content:flex-end;height:64px;align-items:cent
 .ueber-spalten{display:grid;grid-template-columns:3fr 2fr;gap:36px;align-items:start}
 @media (max-width:760px){.ueber-spalten{grid-template-columns:1fr;gap:12px}}
 .ueber-text p{margin:0 0 14px}
+.einladen{margin-top:22px;padding:18px 20px;border:1px solid var(--rand);border-radius:10px;background:var(--flaeche)}
+.einladen p{margin:0 0 14px;color:var(--text-leise)}
+.einladen code{white-space:nowrap;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.95em;color:var(--text)}
+.einladen .knopf:hover{background:var(--neon);color:#0a0a0a}
 .grundsaetze{list-style:none;margin:0;padding:0}
 .grundsaetze li{padding:10px 0 10px 16px;border-left:2px solid var(--neon-tief);margin-bottom:10px;color:var(--text-leise)}
 .profile{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0;padding:0}
