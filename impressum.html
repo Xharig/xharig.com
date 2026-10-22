@@ -3,30 +3,57 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0d0d0d">
+<meta name="theme-color" content="#10141c">
 <meta name="color-scheme" content="dark">
 <meta name="robots" content="noindex, nofollow">
-<title data-de="Impressum — Xharig" data-en="Legal notice — Xharig">Impressum — Xharig</title>
+<title data-de="Impressum | Xharig" data-en="Legal notice | Xharig">Impressum | Xharig</title>
 <link rel="icon" href="assets/versespotter-logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/text.css?v=2">
+<link rel="preload" href="assets/schrift/lato-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/schrift/lato-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/basis.css?v=1">
+<link rel="stylesheet" href="assets/text.css?v=3">
 </head>
 <body>
-<header>
-  <div class="mitte">
-    <a href="https://xharig.com/" data-de="← Xharig" data-en="← Xharig">← Xharig</a>
-    <div class="sprache" role="group" aria-label="Sprache / Language">
-      <button type="button" data-lang="de" lang="de">DE</button>
-      <button type="button" data-lang="en" lang="en">EN</button>
-    </div>
+<a class="springen" href="#inhalt" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a>
+
+<header class="kopfleiste">
+  <div class="mitte kopf">
+    <a class="marke" href="https://xharig.com/"><span>Xharig</span></a>
+    <nav aria-label="Seite">
+      <a class="weg" href="https://versekit.xharig.com/" translate="no">VerseKit</a>
+      <a class="weg" href="https://versespotter.xharig.com/" translate="no">VerseSpotter</a>
+      <details class="menue">
+        <summary data-de="Menü" data-en="Menu">Menü</summary>
+        <div class="menue-liste">
+          <a href="https://xharig.com/" data-de="Startseite" data-en="Home">Startseite</a>
+          <a href="https://versekit.xharig.com/" translate="no">VerseKit</a>
+          <a href="https://versespotter.xharig.com/" translate="no">VerseSpotter</a>
+          <a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
+          <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+        </div>
+      </details>
+      <div class="sprache" role="group" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" lang="de">DE</button>
+        <button type="button" data-lang="en" lang="en">EN</button>
+      </div>
+    </nav>
   </div>
 </header>
 
-<main>
+<main id="inhalt" class="textseite">
+<div class="seitenkopf">
   <div class="mitte">
+    <ol class="pfad">
+      <li><a href="https://xharig.com/" translate="no">Xharig</a></li>
+      <li data-de="Impressum" data-en="Legal notice">Impressum</li>
+    </ol>
     <h1 data-de="Impressum" data-en="Legal notice">Impressum</h1>
-    <div class="karte">
-      <p class="leise" data-de="Angaben gemäß § 5 DDG und § 18 Abs. 1 MStV — gilt für xharig.com, versekit.xharig.com und versespotter.xharig.com."
-         data-en="Information under § 5 DDG and § 18 (1) MStV (German law) — applies to xharig.com, versekit.xharig.com and versespotter.xharig.com.">Angaben gemäß § 5 DDG und § 18 Abs. 1 MStV — gilt für xharig.com, versekit.xharig.com und versespotter.xharig.com.</p>
+  </div>
+</div>
+  <div class="mitte">
+    <div class="karte winkel">
+      <p class="leise" data-de="Angaben gemäß § 5 DDG und § 18 Abs. 1 MStV. Gilt für xharig.com, versekit.xharig.com und versespotter.xharig.com."
+         data-en="Information under § 5 DDG and § 18 (1) MStV (German law). Applies to xharig.com, versekit.xharig.com and versespotter.xharig.com.">Angaben gemäß § 5 DDG und § 18 Abs. 1 MStV. Gilt für xharig.com, versekit.xharig.com und versespotter.xharig.com.</p>
 
       <h2 data-de="Anbieter und verantwortlich für den Inhalt" data-en="Provider and responsible for the content">Anbieter und verantwortlich für den Inhalt</h2>
       <p>Robert Garthe<br>
@@ -42,12 +69,12 @@
          data-en="The content of these sites is created with care; no guarantee is given for its accuracy, completeness or timeliness. Linked third-party sites are the sole responsibility of their operators. No legal violations were apparent when the links were set; if one becomes known, the link is removed promptly.">Die Inhalte dieser Seiten werden mit Sorgfalt erstellt; für Richtigkeit, Vollständigkeit und Aktualität wird keine Gewähr übernommen. Für verlinkte fremde Seiten sind allein deren Betreiber verantwortlich. Beim Setzen der Links waren dort keine Rechtsverstöße erkennbar; wird einer bekannt, wird der Link umgehend entfernt.</p>
 
       <h2 data-de="Urheberrecht und Lizenzen" data-en="Copyright and licences">Urheberrecht und Lizenzen</h2>
-      <p class="leise" data-de="Der Quellcode von Verse-Kit und VerseSpotter steht unter der GPL-3.0 und liegt offen auf GitHub. Die Spielbilder bei VerseSpotter stehen unter CC BY-NC 4.0 bzw. CC BY-SA 4.0; Urheber und Quellen nennt dort die Seite „Danke &amp; Lizenzen“. Symbole: Lucide (ISC-Lizenz, © Lucide Icons and Contributors). Alles Übrige bleibt beim jeweiligen Urheber."
-         data-en="The source code of Verse-Kit and VerseSpotter is licensed under GPL-3.0 and public on GitHub. The in-game images on VerseSpotter are licensed under CC BY-NC 4.0 or CC BY-SA 4.0; authors and sources are listed on its “Thanks &amp; licences” page. Icons: Lucide (ISC licence, © Lucide Icons and Contributors). Everything else remains with its respective author.">Der Quellcode von Verse-Kit und VerseSpotter steht unter der GPL-3.0 und liegt offen auf GitHub. Die Spielbilder bei VerseSpotter stehen unter CC BY-NC 4.0 bzw. CC BY-SA 4.0; Urheber und Quellen nennt dort die Seite „Danke &amp; Lizenzen“. Symbole: Lucide (ISC-Lizenz, © Lucide Icons and Contributors). Alles Übrige bleibt beim jeweiligen Urheber.</p>
+      <p class="leise" data-de="Der Quellcode von VerseKit und VerseSpotter steht unter der GPL-3.0 und liegt offen auf GitHub. Die Spielbilder bei VerseSpotter stehen unter CC BY-NC 4.0 bzw. CC BY-SA 4.0; Urheber und Quellen nennt dort die Seite „Danke &amp; Lizenzen“. Symbole: Lucide (ISC-Lizenz, © Lucide Icons and Contributors). Alles Übrige bleibt beim jeweiligen Urheber."
+         data-en="The source code of VerseKit and VerseSpotter is licensed under GPL-3.0 and public on GitHub. The in-game images on VerseSpotter are licensed under CC BY-NC 4.0 or CC BY-SA 4.0; authors and sources are listed on its “Thanks &amp; licences” page. Icons: Lucide (ISC licence, © Lucide Icons and Contributors). Everything else remains with its respective author.">Der Quellcode von VerseKit und VerseSpotter steht unter der GPL-3.0 und liegt offen auf GitHub. Die Spielbilder bei VerseSpotter stehen unter CC BY-NC 4.0 bzw. CC BY-SA 4.0; Urheber und Quellen nennt dort die Seite „Danke &amp; Lizenzen“. Symbole: Lucide (ISC-Lizenz, © Lucide Icons and Contributors). Alles Übrige bleibt beim jeweiligen Urheber.</p>
 
       <h2 data-de="Hinweis" data-en="Note">Hinweis</h2>
-      <p class="leise" data-de="Ein privates, nicht kommerzielles Fan-Projekt. Verse-Kit und VerseSpotter sind kostenlos und quelloffen; Spenden sind freiwillig und begründen keinen Anspruch."
-         data-en="A private, non-commercial fan project. Verse-Kit and VerseSpotter are free and open source; donations are voluntary and create no claim.">Ein privates, nicht kommerzielles Fan-Projekt. Verse-Kit und VerseSpotter sind kostenlos und quelloffen; Spenden sind freiwillig und begründen keinen Anspruch.</p>
+      <p class="leise" data-de="Ein privates, nicht kommerzielles Fan-Projekt. VerseKit und VerseSpotter sind kostenlos und quelloffen; Spenden sind freiwillig und begründen keinen Anspruch."
+         data-en="A private, non-commercial fan project. VerseKit and VerseSpotter are free and open source; donations are voluntary and create no claim.">Ein privates, nicht kommerzielles Fan-Projekt. VerseKit und VerseSpotter sind kostenlos und quelloffen; Spenden sind freiwillig und begründen keinen Anspruch.</p>
       <p class="leise" lang="en">This is an unofficial Star Citizen fan site, not affiliated with the Cloud Imperium group of companies. Star Citizen®, Roberts Space Industries® and Cloud Imperium® are registered trademarks of Cloud Imperium Rights LLC.</p>
     </div>
   </div>
@@ -55,10 +82,29 @@
 
 <footer>
   <div class="mitte">
-    <p class="recht">Xharig · <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a></p>
+    <div class="fuss-raster">
+      <div>
+        <p class="fuss-titel" data-de="Werkzeuge" data-en="Tools">Werkzeuge</p>
+        <a href="https://versekit.xharig.com/" translate="no">VerseKit</a>
+        <a href="https://versespotter.xharig.com/" translate="no">VerseSpotter</a>
+        <a href="https://github.com/Xharig" translate="no">GitHub</a>
+      </div>
+      <div>
+        <p class="fuss-titel" data-de="Gemeinschaft" data-en="Community">Gemeinschaft</p>
+        <a href="/discord" translate="no">Discord</a>
+        <a href="https://robertsspaceindustries.com/en/citizens/Xharig" data-de="RSI-Profil" data-en="RSI profile">RSI-Profil</a>
+        <a href="https://das-kartell.org/" translate="no">Das Kartell</a>
+      </div>
+      <div>
+        <p class="fuss-titel" data-de="Rechtliches" data-en="Legal">Rechtliches</p>
+        <a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
+        <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+      </div>
+    </div>
+    <p class="recht" translate="no">Xharig</p>
   </div>
 </footer>
 
-<script src="assets/sprache.js"></script>
+<script src="assets/sprache.js?v=3"></script>
 </body>
 </html>

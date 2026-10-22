@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0d0d0d">
+<meta name="theme-color" content="#10141c">
 <meta name="color-scheme" content="dark">
 <!-- German page. en/index.html is generated from this file by tools/seite_en_bauen.py: it takes
      every data-en text and every data-en-<attribute> value. After changing this file, run the script. -->
-<title data-de="Xharig — Star-Citizen-Werkzeuge: VerseKit und VerseSpotter" data-en="Xharig — Star Citizen tools: VerseKit and VerseSpotter">Xharig — Star-Citizen-Werkzeuge: VerseKit und VerseSpotter</title>
+<title data-de="Xharig: Star-Citizen-Werkzeuge VerseKit und VerseSpotter" data-en="Xharig: Star Citizen tools VerseKit and VerseSpotter">Xharig: Star-Citizen-Werkzeuge VerseKit und VerseSpotter</title>
 <meta name="description" content="Kostenlose Fan-Werkzeuge für Star Citizen von Xharig: VerseKit (Baupläne, Crafting, Bergbau, Handel) und VerseSpotter (Schiffe erkennen lernen)." data-en-content="Free Star Citizen fan tools by Xharig: VerseKit (blueprints, crafting, mining, trading) and VerseSpotter (learn to recognise ships).">
 <link rel="canonical" href="https://xharig.com/">
 <link rel="alternate" hreflang="de" href="https://xharig.com/">
@@ -59,15 +59,37 @@
 }
 </script>
 <link rel="icon" href="assets/versespotter-logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/start.css?v=6">
+<link rel="preload" href="assets/schrift/lato-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/schrift/lato-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/basis.css?v=1">
+<link rel="stylesheet" href="assets/start.css?v=7">
 </head>
 <body>
-<header>
-  <div class="mitte">
-    <div class="sprache" role="group" aria-label="Sprache / Language">
-      <a href="/" data-lang="de" hreflang="de" lang="de" class="an">DE</a>
-      <a href="/en/" data-lang="en" hreflang="en" lang="en">EN</a>
-    </div>
+
+<a class="springen" href="#inhalt" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a>
+
+<header class="kopfleiste">
+  <div class="mitte kopf">
+    <a class="marke" href="#start"><span>Xharig</span></a>
+    <nav aria-label="Seite" data-en-aria-label="Page">
+      <a class="weg" href="#werkzeuge" data-de="Werkzeuge" data-en="Tools">Werkzeuge</a>
+      <a class="weg" href="#ueber" data-de="Wer steckt dahinter" data-en="Who is behind this">Wer steckt dahinter</a>
+      <a class="weg" href="/discord" translate="no">Discord</a>
+      <details class="menue">
+        <summary data-de="Menü" data-en="Menu">Menü</summary>
+        <div class="menue-liste">
+          <a href="#werkzeuge" data-de="Werkzeuge" data-en="Tools">Werkzeuge</a>
+          <a href="https://versekit.xharig.com/?von=xharig" data-en-href="https://versekit.xharig.com/en/?von=xharig" translate="no">VerseKit</a>
+          <a href="https://versespotter.xharig.com/?von=xharig" data-en-href="https://versespotter.xharig.com/en/?von=xharig" translate="no">VerseSpotter</a>
+          <a href="#ueber" data-de="Wer steckt dahinter" data-en="Who is behind this">Wer steckt dahinter</a>
+          <a href="/discord" translate="no">Discord</a>
+        </div>
+      </details>
+      <div class="sprache" role="group" aria-label="Sprache / Language">
+        <a href="/" data-lang="de" hreflang="de" lang="de" class="an">DE</a>
+        <a href="/en/" data-lang="en" hreflang="en" lang="en">EN</a>
+      </div>
+    </nav>
   </div>
 </header>
 
@@ -75,82 +97,106 @@
   <div class="mitte">
     <span id="hinweis-sprache-text"></span>
     <a id="hinweis-sprache-link" href="/en/"></a>
-    <button type="button" id="hinweis-sprache-zu">×</button>
+    <button type="button" id="hinweis-sprache-zu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
   </div>
 </div>
 
-<main>
-  <div class="kopf">
-    <div class="kreis a"></div>
+<main id="inhalt">
+  <div class="start" id="start">
     <div class="mitte">
-      <h1>Xharig</h1>
-      <p data-de="Kostenlose Werkzeuge für Star Citizen" data-en="Free tools for Star Citizen">Kostenlose Werkzeuge für Star Citizen</p>
+      <h1><span class="name" translate="no">Xharig</span>
+        <span class="zeile" data-de="Kostenlose Werkzeuge für Star Citizen" data-en="Free tools for Star Citizen">Kostenlose Werkzeuge für Star Citizen</span></h1>
     </div>
   </div>
 
-  <div class="mitte kacheln">
-    <a class="kachel" href="https://versekit.xharig.com/?von=xharig" data-en-href="https://versekit.xharig.com/en/?von=xharig">
+  <div class="mitte kacheln" id="werkzeuge">
+    <a class="kachel winkel" href="https://versekit.xharig.com/?von=xharig" data-en-href="https://versekit.xharig.com/en/?von=xharig">
       <span class="hintergrund versekit"></span>
       <span class="inhalt">
-        <span class="zeile"><img src="assets/versekit-icon.png" alt=""><h2>VerseKit</h2></span>
-        <p data-de="Baupläne live im Blick — dazu Aufträge, Herstellung, Bergbau, Handel und Hangar. Für Windows und Linux."
-           data-en="Blueprints live while you play — plus contracts, crafting, mining, trading and hangar. For Windows and Linux.">Baupläne live im Blick — dazu Aufträge, Herstellung, Bergbau, Handel und Hangar. Für Windows und Linux.</p>
+        <span class="zeile"><img src="assets/versekit-icon.png" alt="" width="64" height="64"><h2>VerseKit</h2></span>
+        <p data-de="Baupläne live im Blick, dazu Aufträge, Herstellung, Bergbau, Handel und Hangar. Für Windows und Linux."
+           data-en="Blueprints live while you play, plus contracts, crafting, mining, trading and hangar. For Windows and Linux.">Baupläne live im Blick, dazu Aufträge, Herstellung, Bergbau, Handel und Hangar. Für Windows und Linux.</p>
         <span class="knopf"><span data-de="Zur Seite" data-en="Visit">Zur Seite</span><span class="pfeil" aria-hidden="true"></span></span>
       </span>
     </a>
-    <a class="kachel" href="https://versespotter.xharig.com/?von=xharig" data-en-href="https://versespotter.xharig.com/en/?von=xharig">
+    <a class="kachel winkel" href="https://versespotter.xharig.com/?von=xharig" data-en-href="https://versespotter.xharig.com/en/?von=xharig">
       <span class="hintergrund versespotter"></span>
       <span class="inhalt">
-        <span class="zeile"><img src="assets/versespotter-logo.svg" alt=""><h2>VerseSpotter</h2></span>
-        <p data-de="Schiffe erkennen lernen — am Hologramm im HUD und an der Silhouette im Flug. Direkt im Browser."
-           data-en="Learn to recognise ships — by their HUD hologram and silhouette in flight. Right in your browser.">Schiffe erkennen lernen — am Hologramm im HUD und an der Silhouette im Flug. Direkt im Browser.</p>
+        <span class="zeile"><img src="assets/versespotter-logo.svg" alt="" width="64" height="64"><h2>VerseSpotter</h2></span>
+        <p data-de="Schiffe erkennen lernen: am Hologramm im HUD und an der Silhouette im Flug. Direkt im Browser."
+           data-en="Learn to recognise ships: by their HUD hologram and silhouette in flight. Right in your browser.">Schiffe erkennen lernen: am Hologramm im HUD und an der Silhouette im Flug. Direkt im Browser.</p>
         <span class="knopf"><span data-de="Zur Seite" data-en="Visit">Zur Seite</span><span class="pfeil" aria-hidden="true"></span></span>
       </span>
     </a>
   </div>
 
-  <section class="mitte ueber" aria-labelledby="ueber-titel">
-    <h2 id="ueber-titel" data-de="Wer steckt dahinter" data-en="Who is behind this">Wer steckt dahinter</h2>
-    <div class="ueber-spalten">
-      <div class="ueber-text">
-        <p data-de="Hi, ich bin Xharig, Star-Citizen-Spieler und Bastler. Was mir im Verse gefehlt hat, baue ich mir in der Freizeit selbst: erst VerseKit für Baupläne, Herstellung und Handel, dann VerseSpotter zum Üben der Schiffserkennung."
-           data-en="Hi, I'm Xharig, Star Citizen player and tinkerer. What I missed in the 'verse, I build myself in my spare time: first VerseKit for blueprints, crafting and trading, then VerseSpotter to practise recognising ships.">Hi, ich bin Xharig, Star-Citizen-Spieler und Bastler. Was mir im Verse gefehlt hat, baue ich mir in der Freizeit selbst: erst VerseKit für Baupläne, Herstellung und Handel, dann VerseSpotter zum Üben der Schiffserkennung.</p>
-        <p><span data-de="Im Spiel fliege ich mit der Organisation" data-en="In the game I fly with the organisation">Im Spiel fliege ich mit der Organisation</span> <a href="https://das-kartell.org/" lang="de" translate="no">Das Kartell</a>.</p>
-        <div class="einladen">
-          <p><span data-de="Neu in Star Citizen? Meldest du dich mit meinem Empfehlungscode" data-en="New to Star Citizen? Sign up with my referral code">Neu in Star Citizen? Meldest du dich mit meinem Empfehlungscode</span> <code translate="no">STAR-YC7L-S4W2</code> <span data-de="an, bekommst du nach dem Kauf eines Spielpakets 50.000 UEC Startguthaben im Spiel dazu." data-en="and you get 50,000 UEC of in-game credit after buying a game package.">an, bekommst du nach dem Kauf eines Spielpakets 50.000 UEC Startguthaben im Spiel dazu.</span></p>
-          <p data-de="Gib den Code gern an Freunde weiter, die neu anfangen, sie bekommen dieselben 50.000 UEC."
-             data-en="Feel free to pass the code on to friends who are just starting, they get the same 50,000 UEC.">Gib den Code gern an Freunde weiter, die neu anfangen, sie bekommen dieselben 50.000 UEC.</p>
-          <div class="knopfreihe">
-            <a class="knopf" href="https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2"><span data-de="Mit meinem Code anmelden" data-en="Sign up with my code">Mit meinem Code anmelden</span><span class="pfeil" aria-hidden="true"></span></a>
-            <button type="button" class="knopf zweit" id="ref-teilen" data-code="STAR-YC7L-S4W2" data-link="https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2"><span data-de="Link weitergeben" data-en="Pass the link on">Link weitergeben</span></button>
+  <section id="ueber" aria-labelledby="ueber-titel">
+    <div class="mitte">
+      <h2 id="ueber-titel" data-de="Wer steckt dahinter" data-en="Who is behind this">Wer steckt dahinter</h2>
+      <div class="ueber-spalten">
+        <div class="ueber-text">
+          <p data-de="Hi, ich bin Xharig, Star-Citizen-Spieler und Bastler. Was mir im Verse gefehlt hat, baue ich mir in der Freizeit selbst: erst VerseKit für Baupläne, Herstellung und Handel, dann VerseSpotter zum Üben der Schiffserkennung."
+             data-en="Hi, I'm Xharig, Star Citizen player and tinkerer. What I missed in the 'verse, I build myself in my spare time: first VerseKit for blueprints, crafting and trading, then VerseSpotter to practise recognising ships.">Hi, ich bin Xharig, Star-Citizen-Spieler und Bastler. Was mir im Verse gefehlt hat, baue ich mir in der Freizeit selbst: erst VerseKit für Baupläne, Herstellung und Handel, dann VerseSpotter zum Üben der Schiffserkennung.</p>
+          <p><span data-de="Im Spiel fliege ich mit der Organisation" data-en="In the game I fly with the organisation">Im Spiel fliege ich mit der Organisation</span> <a href="https://das-kartell.org/" lang="de" translate="no">Das Kartell</a>.</p>
+          <div class="einladen winkel">
+            <p><span data-de="Neu in Star Citizen? Meldest du dich mit meinem Empfehlungscode" data-en="New to Star Citizen? Sign up with my referral code">Neu in Star Citizen? Meldest du dich mit meinem Empfehlungscode</span> <code translate="no">STAR-YC7L-S4W2</code> <span data-de="an, bekommst du nach dem Kauf eines Spielpakets 50.000 UEC Startguthaben im Spiel dazu." data-en="and you get 50,000 UEC of in-game credit after buying a game package.">an, bekommst du nach dem Kauf eines Spielpakets 50.000 UEC Startguthaben im Spiel dazu.</span></p>
+            <p data-de="Gib den Code gern an Freunde weiter, die neu anfangen, sie bekommen dieselben 50.000 UEC."
+               data-en="Feel free to pass the code on to friends who are just starting, they get the same 50,000 UEC.">Gib den Code gern an Freunde weiter, die neu anfangen, sie bekommen dieselben 50.000 UEC.</p>
+            <div class="knopfreihe">
+              <a class="knopf" href="https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2"><span data-de="Mit meinem Code anmelden" data-en="Sign up with my code">Mit meinem Code anmelden</span><span class="pfeil" aria-hidden="true"></span></a>
+              <button type="button" class="knopf" id="ref-teilen" data-code="STAR-YC7L-S4W2" data-link="https://robertsspaceindustries.com/enlist?referral=STAR-YC7L-S4W2"><span data-de="Link weitergeben" data-en="Pass the link on">Link weitergeben</span></button>
+            </div>
+            <p class="ref-meldung" id="ref-meldung" aria-live="polite"></p>
           </div>
-          <p class="ref-meldung" id="ref-meldung" aria-live="polite"></p>
         </div>
+        <ul class="grundsaetze">
+          <li data-de="Kostenlos und quelloffen, der Code liegt offen auf GitHub." data-en="Free and open source, the code is public on GitHub.">Kostenlos und quelloffen, der Code liegt offen auf GitHub.</li>
+          <li data-de="Kein Konto, keine Werbung." data-en="No account, no ads.">Kein Konto, keine Werbung.</li>
+          <li data-de="Rückmeldungen aus der Community machen die Werkzeuge besser." data-en="Feedback from the community makes the tools better.">Rückmeldungen aus der Community machen die Werkzeuge besser.</li>
+        </ul>
       </div>
-      <ul class="grundsaetze">
-        <li data-de="Kostenlos und quelloffen, der Code liegt offen auf GitHub." data-en="Free and open source, the code is public on GitHub.">Kostenlos und quelloffen, der Code liegt offen auf GitHub.</li>
-        <li data-de="Kein Konto, keine Werbung." data-en="No account, no ads.">Kein Konto, keine Werbung.</li>
-        <li data-de="Rückmeldungen aus der Community machen die Werkzeuge besser." data-en="Feedback from the community makes the tools better.">Rückmeldungen aus der Community machen die Werkzeuge besser.</li>
+      <ul class="profile" aria-label="Profile" data-en-aria-label="Profiles">
+        <li><a class="knopf" href="https://github.com/Xharig" rel="me" translate="no">GitHub</a></li>
+        <li><a class="knopf" href="/discord" translate="no">Discord</a></li>
+        <li><a class="knopf" href="https://robertsspaceindustries.com/en/citizens/Xharig" rel="me" data-de="RSI-Profil" data-en="RSI profile">RSI-Profil</a></li>
+        <li><a class="knopf" href="https://das-kartell.org/" translate="no">Das Kartell</a></li>
       </ul>
     </div>
-    <ul class="profile" aria-label="Profile" data-en-aria-label="Profiles">
-      <li><a href="https://github.com/Xharig" rel="me" translate="no">GitHub</a></li>
-      <li><a href="/discord" translate="no">Discord</a></li>
-      <li><a href="https://robertsspaceindustries.com/en/citizens/Xharig" rel="me" data-de="RSI-Profil" data-en="RSI profile">RSI-Profil</a></li>
-      <li><a href="https://das-kartell.org/" translate="no">Das Kartell</a></li>
-    </ul>
   </section>
 </main>
 
 <footer>
   <div class="mitte">
-    <img class="fankit" src="assets/made-by-the-community.png" alt="Star Citizen — Made by the Community" width="110">
-    <p class="fan" lang="en">This is an unofficial Star Citizen fan site, not affiliated with the Cloud Imperium group of companies. All content on this site not authored by its host or users are property of their respective owners. Star Citizen®, Roberts Space Industries® and Cloud Imperium® are registered trademarks of Cloud Imperium Rights LLC.</p>
-    <p class="recht">Xharig · <a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a> · <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a></p>
+    <div class="fuss-raster">
+      <div>
+        <p class="fuss-titel" data-de="Werkzeuge" data-en="Tools">Werkzeuge</p>
+        <a href="https://versekit.xharig.com/?von=xharig" data-en-href="https://versekit.xharig.com/en/?von=xharig" translate="no">VerseKit</a>
+        <a href="https://versespotter.xharig.com/?von=xharig" data-en-href="https://versespotter.xharig.com/en/?von=xharig" translate="no">VerseSpotter</a>
+        <a href="https://github.com/Xharig" translate="no">GitHub</a>
+      </div>
+      <div>
+        <p class="fuss-titel" data-de="Gemeinschaft" data-en="Community">Gemeinschaft</p>
+        <a href="/discord" translate="no">Discord</a>
+        <a href="https://robertsspaceindustries.com/en/citizens/Xharig" data-de="RSI-Profil" data-en="RSI profile">RSI-Profil</a>
+        <a href="https://das-kartell.org/" translate="no">Das Kartell</a>
+      </div>
+      <div>
+        <p class="fuss-titel" data-de="Rechtliches" data-en="Legal">Rechtliches</p>
+        <a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
+        <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+      </div>
+    </div>
+
+    <div class="fuss-fan">
+      <img class="fankit" src="assets/made-by-the-community-240.png" width="120" height="120" loading="lazy"
+           alt="Star Citizen: Made by the Community">
+      <p class="fan" lang="en">This is an unofficial Star Citizen fan site, not affiliated with the Cloud Imperium group of companies. All content on this site not authored by its host or users are property of their respective owners. Star Citizen®, Roberts Space Industries® and Cloud Imperium® are registered trademarks of Cloud Imperium Rights LLC.</p>
+    </div>
+    <p class="recht" translate="no">Xharig</p>
   </div>
 </footer>
 
-<script src="assets/sprache.js?v=2"></script>
+<script src="assets/sprache.js?v=3"></script>
 <script src="assets/teilen.js?v=1"></script>
 </body>
 </html>

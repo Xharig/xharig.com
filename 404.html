@@ -3,33 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0d0d0d">
+<meta name="theme-color" content="#10141c">
 <meta name="color-scheme" content="dark">
 <meta name="robots" content="noindex, nofollow">
-<title data-de="Seite nicht gefunden — Xharig" data-en="Page not found — Xharig">Seite nicht gefunden — Xharig</title>
+<title data-de="Seite nicht gefunden | Xharig" data-en="Page not found | Xharig">Seite nicht gefunden | Xharig</title>
 <link rel="icon" href="/assets/versespotter-logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/text.css?v=2">
+<link rel="preload" href="/assets/schrift/lato-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/schrift/lato-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/basis.css?v=1">
+<link rel="stylesheet" href="/assets/text.css?v=3">
 </head>
 <body>
-<header>
-  <div class="mitte">
-    <a href="https://xharig.com/" data-de="← Xharig" data-en="← Xharig">← Xharig</a>
-    <div class="sprache" role="group" aria-label="Sprache / Language">
-      <button type="button" data-lang="de" lang="de">DE</button>
-      <button type="button" data-lang="en" lang="en">EN</button>
-    </div>
+<a class="springen" href="#inhalt" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a>
+
+<header class="kopfleiste">
+  <div class="mitte kopf">
+    <a class="marke" href="https://xharig.com/"><span>Xharig</span></a>
+    <nav aria-label="Seite">
+      <a class="weg" href="https://versekit.xharig.com/" translate="no">VerseKit</a>
+      <a class="weg" href="https://versespotter.xharig.com/" translate="no">VerseSpotter</a>
+      <details class="menue">
+        <summary data-de="Menü" data-en="Menu">Menü</summary>
+        <div class="menue-liste">
+          <a href="https://xharig.com/" data-de="Startseite" data-en="Home">Startseite</a>
+          <a href="https://versekit.xharig.com/" translate="no">VerseKit</a>
+          <a href="https://versespotter.xharig.com/" translate="no">VerseSpotter</a>
+          <a href="/impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
+          <a href="/datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+        </div>
+      </details>
+      <div class="sprache" role="group" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" lang="de">DE</button>
+        <button type="button" data-lang="en" lang="en">EN</button>
+      </div>
+    </nav>
   </div>
 </header>
 
-<main>
+<main id="inhalt" class="textseite">
+<div class="seitenkopf">
   <div class="mitte">
+    <ol class="pfad">
+      <li><a href="https://xharig.com/" translate="no">Xharig</a></li>
+      <li data-de="Seite nicht gefunden" data-en="Page not found">Seite nicht gefunden</li>
+    </ol>
     <h1 data-de="Seite nicht gefunden" data-en="Page not found">Seite nicht gefunden</h1>
-    <div class="karte">
+  </div>
+</div>
+  <div class="mitte">
+    <div class="karte winkel">
       <p class="leise" data-de="Unter dieser Adresse gibt es nichts. Vielleicht ist der Link veraltet oder vertippt."
          data-en="There is nothing at this address. The link may be outdated or mistyped.">Unter dieser Adresse gibt es nichts. Vielleicht ist der Link veraltet oder vertippt.</p>
       <ul>
         <li><a href="https://xharig.com/" data-de="Zur Startseite" data-en="Go to the home page">Zur Startseite</a></li>
-        <li><a href="https://versekit.xharig.com/">Verse-Kit</a></li>
+        <li><a href="https://versekit.xharig.com/">VerseKit</a></li>
         <li><a href="https://versespotter.xharig.com/">VerseSpotter</a></li>
       </ul>
     </div>
@@ -38,10 +65,29 @@
 
 <footer>
   <div class="mitte">
-    <p class="recht">Xharig · <a href="/impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a> · <a href="/datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a></p>
+    <div class="fuss-raster">
+      <div>
+        <p class="fuss-titel" data-de="Werkzeuge" data-en="Tools">Werkzeuge</p>
+        <a href="https://versekit.xharig.com/" translate="no">VerseKit</a>
+        <a href="https://versespotter.xharig.com/" translate="no">VerseSpotter</a>
+        <a href="https://github.com/Xharig" translate="no">GitHub</a>
+      </div>
+      <div>
+        <p class="fuss-titel" data-de="Gemeinschaft" data-en="Community">Gemeinschaft</p>
+        <a href="/discord" translate="no">Discord</a>
+        <a href="https://robertsspaceindustries.com/en/citizens/Xharig" data-de="RSI-Profil" data-en="RSI profile">RSI-Profil</a>
+        <a href="https://das-kartell.org/" translate="no">Das Kartell</a>
+      </div>
+      <div>
+        <p class="fuss-titel" data-de="Rechtliches" data-en="Legal">Rechtliches</p>
+        <a href="/impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
+        <a href="/datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+      </div>
+    </div>
+    <p class="recht" translate="no">Xharig</p>
   </div>
 </footer>
 
-<script src="/assets/sprache.js"></script>
+<script src="/assets/sprache.js?v=3"></script>
 </body>
 </html>

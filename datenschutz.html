@@ -3,28 +3,55 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0d0d0d">
+<meta name="theme-color" content="#10141c">
 <meta name="color-scheme" content="dark">
 <meta name="robots" content="noindex, nofollow">
-<title data-de="Datenschutz — Xharig" data-en="Privacy — Xharig">Datenschutz — Xharig</title>
+<title data-de="Datenschutz | Xharig" data-en="Privacy | Xharig">Datenschutz | Xharig</title>
 <link rel="icon" href="assets/versespotter-logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/text.css?v=2">
+<link rel="preload" href="assets/schrift/lato-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/schrift/lato-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/basis.css?v=1">
+<link rel="stylesheet" href="assets/text.css?v=3">
 </head>
-<body class="breit">
-<header>
-  <div class="mitte">
-    <a href="https://xharig.com/" data-de="← Xharig" data-en="← Xharig">← Xharig</a>
-    <div class="sprache" role="group" aria-label="Sprache / Language">
-      <button type="button" data-lang="de" lang="de">DE</button>
-      <button type="button" data-lang="en" lang="en">EN</button>
-    </div>
+<body>
+<a class="springen" href="#inhalt" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a>
+
+<header class="kopfleiste">
+  <div class="mitte kopf">
+    <a class="marke" href="https://xharig.com/"><span>Xharig</span></a>
+    <nav aria-label="Seite">
+      <a class="weg" href="https://versekit.xharig.com/" translate="no">VerseKit</a>
+      <a class="weg" href="https://versespotter.xharig.com/" translate="no">VerseSpotter</a>
+      <details class="menue">
+        <summary data-de="Menü" data-en="Menu">Menü</summary>
+        <div class="menue-liste">
+          <a href="https://xharig.com/" data-de="Startseite" data-en="Home">Startseite</a>
+          <a href="https://versekit.xharig.com/" translate="no">VerseKit</a>
+          <a href="https://versespotter.xharig.com/" translate="no">VerseSpotter</a>
+          <a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
+          <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+        </div>
+      </details>
+      <div class="sprache" role="group" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" lang="de">DE</button>
+        <button type="button" data-lang="en" lang="en">EN</button>
+      </div>
+    </nav>
   </div>
 </header>
 
-<main>
+<main id="inhalt" class="textseite">
+<div class="seitenkopf">
   <div class="mitte">
+    <ol class="pfad">
+      <li><a href="https://xharig.com/" translate="no">Xharig</a></li>
+      <li data-de="Datenschutz" data-en="Privacy">Datenschutz</li>
+    </ol>
     <h1 data-de="Datenschutz" data-en="Privacy">Datenschutz</h1>
-    <div class="karte">
+  </div>
+</div>
+  <div class="mitte">
+    <div class="karte winkel">
 
       <p class="leise" data-de="Gilt für xharig.com, versekit.xharig.com und versespotter.xharig.com. Stand: 13.10.2026."
          data-en="Applies to xharig.com, versekit.xharig.com and versespotter.xharig.com. As of 13 October 2026.">Gilt für xharig.com, versekit.xharig.com und versespotter.xharig.com. Stand: 13.10.2026.</p>
@@ -33,8 +60,8 @@
       <ul>
         <li data-de="Keine Cookies, keine Werbung, kein Tracking über die Seiten hinweg, keine fremden Schriften oder Videodienste."
             data-en="No cookies, no ads, no cross-site tracking, no third-party fonts or video services.">Keine Cookies, keine Werbung, kein Tracking über die Seiten hinweg, keine fremden Schriften oder Videodienste.</li>
-        <li data-de="Gezählt wird nur, wie oft etwas genutzt wird — als Zahl pro Tag, ohne Kennung und ohne gespeicherte IP-Adresse."
-            data-en="Only how often things are used is counted — as a number per day, with no ID and no stored IP address.">Gezählt wird nur, wie oft etwas genutzt wird — als Zahl pro Tag, ohne Kennung und ohne gespeicherte IP-Adresse.</li>
+        <li data-de="Gezählt wird nur, wie oft etwas genutzt wird: als Zahl pro Tag, ohne Kennung und ohne gespeicherte IP-Adresse."
+            data-en="Only how often things are used is counted: as a number per day, with no ID and no stored IP address.">Gezählt wird nur, wie oft etwas genutzt wird: als Zahl pro Tag, ohne Kennung und ohne gespeicherte IP-Adresse.</li>
       </ul>
 
       <h2 data-de="Verantwortlich" data-en="Controller">Verantwortlich</h2>
@@ -62,15 +89,15 @@
       </ul>
 
       <h2 data-de="Gespeichert in deinem Browser" data-en="Stored in your browser">Gespeichert in deinem Browser</h2>
-      <p data-de="Nur auf deinem Gerät, nie übertragen, jederzeit über die Browsereinstellungen löschbar: die gewählte Sprache (xharig.lang, versespotter.lang), bei VerseSpotter deine Einstellungen und dein Lernstand (versespotter.settings, versespotter.progress) — der Lernstand lässt sich auch auf der Seite zurücksetzen."
-         data-en="Only on your device, never transmitted, deletable at any time in your browser settings: the chosen language (xharig.lang, versespotter.lang), and for VerseSpotter your settings and learning progress (versespotter.settings, versespotter.progress) — the progress can also be reset on the site.">Nur auf deinem Gerät, nie übertragen, jederzeit über die Browsereinstellungen löschbar: die gewählte Sprache (xharig.lang, versespotter.lang), bei VerseSpotter deine Einstellungen und dein Lernstand (versespotter.settings, versespotter.progress) — der Lernstand lässt sich auch auf der Seite zurücksetzen.</p>
+      <p data-de="Nur auf deinem Gerät, nie übertragen, jederzeit über die Browsereinstellungen löschbar: die gewählte Sprache (xharig.lang, versespotter.lang), bei VerseSpotter deine Einstellungen und dein Lernstand (versespotter.settings, versespotter.progress); der Lernstand lässt sich auch auf der Seite zurücksetzen."
+         data-en="Only on your device, never transmitted, deletable at any time in your browser settings: the chosen language (xharig.lang, versespotter.lang), and for VerseSpotter your settings and learning progress (versespotter.settings, versespotter.progress); the progress can also be reset on the site.">Nur auf deinem Gerät, nie übertragen, jederzeit über die Browsereinstellungen löschbar: die gewählte Sprache (xharig.lang, versespotter.lang), bei VerseSpotter deine Einstellungen und dein Lernstand (versespotter.settings, versespotter.progress); der Lernstand lässt sich auch auf der Seite zurücksetzen.</p>
 
-      <h2 data-de="Das Programm Verse-Kit" data-en="The Verse-Kit program">Das Programm Verse-Kit</h2>
+      <h2 data-de="Das Programm VerseKit" data-en="The VerseKit program">Das Programm VerseKit</h2>
       <ul>
-        <li data-de="Einmal am Tag meldet Verse-Kit, dass es läuft, und welche Seiten genutzt wurden — ohne Kennung, abschaltbar unter Einstellungen → Allgemein."
-            data-en="Once a day Verse-Kit reports that it is running and which pages were used — without an ID, switchable off under Settings → General.">Einmal am Tag meldet Verse-Kit, dass es läuft, und welche Seiten genutzt wurden — ohne Kennung, abschaltbar unter Einstellungen → Allgemein.</li>
-        <li data-de="Einen Fehlerbericht schickt Verse-Kit nur, wenn du ihn selbst absendest. Er geht über einen Cloudflare Worker an einen Discord-Kanal des Entwicklers (Discord, Inc., USA). Persönliche Ordnernamen werden vorher entfernt; ein Name steht nur drin, wenn du ihn selbst einträgst."
-            data-en="Verse-Kit only sends a bug report if you send it yourself. It goes through a Cloudflare Worker to a Discord channel of the developer (Discord, Inc., USA). Personal folder names are removed beforehand; a name is only included if you enter one yourself.">Einen Fehlerbericht schickt Verse-Kit nur, wenn du ihn selbst absendest. Er geht über einen Cloudflare Worker an einen Discord-Kanal des Entwicklers (Discord, Inc., USA). Persönliche Ordnernamen werden vorher entfernt; ein Name steht nur drin, wenn du ihn selbst einträgst.</li>
+        <li data-de="Einmal am Tag meldet VerseKit, dass es läuft, und welche Seiten genutzt wurden, ohne Kennung, abschaltbar unter Einstellungen → Allgemein."
+            data-en="Once a day VerseKit reports that it is running and which pages were used, without an ID, switchable off under Settings → General.">Einmal am Tag meldet VerseKit, dass es läuft, und welche Seiten genutzt wurden, ohne Kennung, abschaltbar unter Einstellungen → Allgemein.</li>
+        <li data-de="Einen Fehlerbericht schickt VerseKit nur, wenn du ihn selbst absendest. Er geht über einen Cloudflare Worker an einen Discord-Kanal des Entwicklers (Discord, Inc., USA). Persönliche Ordnernamen werden vorher entfernt; ein Name steht nur drin, wenn du ihn selbst einträgst."
+            data-en="VerseKit only sends a bug report if you send it yourself. It goes through a Cloudflare Worker to a Discord channel of the developer (Discord, Inc., USA). Personal folder names are removed beforehand; a name is only included if you enter one yourself.">Einen Fehlerbericht schickt VerseKit nur, wenn du ihn selbst absendest. Er geht über einen Cloudflare Worker an einen Discord-Kanal des Entwicklers (Discord, Inc., USA). Persönliche Ordnernamen werden vorher entfernt; ein Name steht nur drin, wenn du ihn selbst einträgst.</li>
         <li data-de="Die Verbindung zum KRT Profit Basetool ist aus, bis du sie selbst herstellst; jeder Bereich wird einzeln eingeschaltet."
             data-en="The connection to the KRT Profit Basetool is off until you set it up yourself; each area is turned on individually.">Die Verbindung zum KRT Profit Basetool ist aus, bis du sie selbst herstellst; jeder Bereich wird einzeln eingeschaltet.</li>
       </ul>
@@ -90,10 +117,29 @@
 
 <footer>
   <div class="mitte">
-    <p class="recht">Xharig · <a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a></p>
+    <div class="fuss-raster">
+      <div>
+        <p class="fuss-titel" data-de="Werkzeuge" data-en="Tools">Werkzeuge</p>
+        <a href="https://versekit.xharig.com/" translate="no">VerseKit</a>
+        <a href="https://versespotter.xharig.com/" translate="no">VerseSpotter</a>
+        <a href="https://github.com/Xharig" translate="no">GitHub</a>
+      </div>
+      <div>
+        <p class="fuss-titel" data-de="Gemeinschaft" data-en="Community">Gemeinschaft</p>
+        <a href="/discord" translate="no">Discord</a>
+        <a href="https://robertsspaceindustries.com/en/citizens/Xharig" data-de="RSI-Profil" data-en="RSI profile">RSI-Profil</a>
+        <a href="https://das-kartell.org/" translate="no">Das Kartell</a>
+      </div>
+      <div>
+        <p class="fuss-titel" data-de="Rechtliches" data-en="Legal">Rechtliches</p>
+        <a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
+        <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+      </div>
+    </div>
+    <p class="recht" translate="no">Xharig</p>
   </div>
 </footer>
 
-<script src="assets/sprache.js"></script>
+<script src="assets/sprache.js?v=3"></script>
 </body>
 </html>

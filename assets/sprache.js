@@ -31,7 +31,7 @@
       var zu = document.getElementById('hinweis-sprache-zu');
       document.getElementById('hinweis-sprache-text').textContent = browser === 'en'
         ? 'This page is also available in English.' : 'Diese Seite gibt es auch auf Deutsch.';
-      link.textContent = browser === 'en' ? 'English version →' : 'Zur deutschen Fassung →';
+      link.textContent = browser === 'en' ? 'English version' : 'Zur deutschen Fassung';
       link.href = adresse[browser];
       link.lang = browser;
       link.addEventListener('click', function () { keep(browser); });

@@ -1,73 +1,58 @@
-/* Marke: Neon #9ce430 auf dunklem Grund, Akzent nie flächig. Keine fremden Schriften. */
-:root{--neon:#9ce430;--neon-tief:#5fa522;--grund:#0d0d0d;--flaeche:#141414;--rand:#242424;--text:#e8e8e8;--text-leise:#a3a3a3}
-*{box-sizing:border-box}
-body{margin:0;font-family:Calibri,"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
-  background:var(--grund);background-image:radial-gradient(1200px 700px at 50% -10%,#1c1c1c 0%,#0d0d0d 55%,#0a0a0a 100%);
-  background-attachment:fixed;color:var(--text);line-height:1.6;font-size:17px;min-height:100vh;display:flex;flex-direction:column}
-html{background:var(--grund)}
-main{flex:1}
-a{color:var(--neon);text-decoration:none}
-:focus-visible{outline:3px solid var(--neon);outline-offset:3px;border-radius:6px}
-.mitte{max-width:1120px;margin:0 auto;padding:0 22px}
-@media (max-width:600px){.mitte{padding:0 16px}}
-header .mitte{display:flex;justify-content:flex-end;height:64px;align-items:center}
-.sprache{display:flex;border:1px solid var(--rand);border-radius:999px;overflow:hidden}
-.sprache button,.sprache a{background:none;border:0;color:var(--text-leise);font:inherit;font-size:14px;padding:5px 13px;cursor:pointer}
-.sprache a:hover{color:var(--neon)}
-.sprache button.an,.sprache a.an{background:var(--neon);color:#0a0a0a;font-weight:700}
-/* Offers the other language version (assets/sprache.js) */
-.hinweis-sprache{background:var(--flaeche);border-top:1px solid var(--rand);border-bottom:1px solid var(--rand);font-size:15px}
-.hinweis-sprache .mitte{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
-.hinweis-sprache a{font-weight:700}
-.hinweis-sprache button{margin-left:auto;background:none;border:0;color:var(--text-leise);font:inherit;font-size:20px;line-height:1;padding:2px 6px;cursor:pointer}
-.hinweis-sprache button:hover{color:var(--neon)}
-.kopf{text-align:center;padding:30px 0 40px;position:relative;overflow:hidden}
-.kopf h1{font-size:52px;font-weight:800;margin:0 0 8px;letter-spacing:.5px}
-.kopf p{font-size:20px;color:var(--text-leise);margin:0}
-.kreis{position:absolute;border:2px solid var(--neon);border-radius:50%;pointer-events:none;opacity:.1}
-.kreis.a{width:520px;height:520px;top:-300px;left:-180px}
-.kacheln{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;padding-bottom:60px}
-@media (max-width:760px){.kacheln{grid-template-columns:1fr}.kopf h1{font-size:38px}}
-.kachel{position:relative;display:flex;flex-direction:column;min-height:340px;border:1px solid var(--rand);
-  border-radius:14px;overflow:hidden;background:var(--flaeche);color:var(--text);isolation:isolate}
-.kachel:hover{border-color:var(--neon)}
-.kachel .hintergrund{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.22;z-index:-1;transition:opacity .2s}
+/* Home page of xharig.com: the parts only this page has. Colours, type,
+   buttons, header, menu and footer come from basis.css, which every page of
+   every Xharig site loads first. */
+
+/* The name alone is the mark here, so it stays visible on phones too. */
+.marke span{display:inline !important}
+
+/* ---------- Headline ---------- */
+.start{padding:64px 0 40px}
+.start h1{margin:0}
+.start h1 .name{display:block;font-size:clamp(52px,8vw,84px);line-height:1;font-weight:700;letter-spacing:-.02em}
+.start h1 .zeile{display:block;margin-top:14px;font-size:clamp(23px,2.6vw,30px);line-height:1.25;font-weight:400;color:var(--leise)}
+
+/* ---------- The two tools ----------
+   A picture of the tool behind, text and button in front. The picture has
+   its own rounding, so the accent corners of the frame stay visible. */
+.kacheln{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;padding-bottom:88px}
+.kachel{display:flex;flex-direction:column;min-height:340px;color:var(--text);isolation:isolate;background:var(--flaeche)}
+.kachel:hover{text-decoration:none;border-color:var(--neon)}
+.kachel .hintergrund{position:absolute;inset:0;border-radius:calc(var(--rund) - 1px);background-size:cover;background-position:center;opacity:.22;z-index:-1}
 .kachel .hintergrund.versekit{background-image:url(versekit-hintergrund.webp)}
 .kachel .hintergrund.versespotter{background-image:url(versespotter-hintergrund.webp)}
 .kachel:hover .hintergrund{opacity:.32}
-.kachel .inhalt{margin-top:auto;padding:26px;background:linear-gradient(transparent,rgba(10,10,10,.92) 40%)}
+@media (prefers-reduced-motion:no-preference){.kachel .hintergrund{transition:opacity .25s}}
+.kachel .inhalt{margin-top:auto;padding:26px;border-radius:0 0 calc(var(--rund) - 1px) calc(var(--rund) - 1px);
+  background:linear-gradient(rgba(16,20,28,0),rgba(16,20,28,.94) 40%)}
 .kachel .zeile{display:flex;align-items:center;gap:16px;margin-bottom:10px}
 .kachel img{width:64px;height:64px;flex:none}
-.kachel h2{font-size:28px;font-weight:800;margin:0}
-.kachel p{margin:0 0 18px;color:var(--text-leise);min-height:3.2em}
-.knopf{display:inline-flex;align-items:center;gap:9px;padding:11px 22px;border-radius:8px;font-weight:700;border:2px solid var(--neon);color:var(--neon)}
-.kachel:hover .knopf{background:var(--neon);color:#0a0a0a}
-.pfeil{width:1.1em;height:1.1em;background:currentColor;-webkit-mask:url(arrow-right.svg) center/contain no-repeat;mask:url(arrow-right.svg) center/contain no-repeat}
-.ueber{padding-bottom:64px}
-.ueber h2{font-size:26px;font-weight:800;margin:0 0 18px;padding-top:28px;border-top:1px solid var(--rand)}
-.ueber-spalten{display:grid;grid-template-columns:3fr 2fr;gap:36px;align-items:start}
-@media (max-width:760px){.ueber-spalten{grid-template-columns:1fr;gap:12px}}
-.ueber-text p{margin:0 0 14px}
-.einladen{margin-top:22px;padding:18px 20px;border:1px solid var(--rand);border-radius:10px;background:var(--flaeche)}
-.einladen p{margin:0 0 14px;color:var(--text-leise)}
-.einladen code{white-space:nowrap;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.95em;color:var(--text)}
-.einladen .knopf:hover{background:var(--neon);color:#0a0a0a}
-.einladen .knopfreihe{display:flex;flex-wrap:wrap;gap:12px}
-.einladen .knopf.zweit{background:none;font:inherit;font-weight:700;cursor:pointer;border-color:var(--rand);color:var(--text)}
-.einladen .knopf.zweit:hover{border-color:var(--neon);background:none;color:var(--neon)}
-.einladen .ref-meldung{margin:10px 0 0;min-height:1.6em;font-size:15px;color:var(--neon);overflow-wrap:anywhere}
-.grundsaetze{list-style:none;margin:0;padding:0}
-.grundsaetze li{padding:10px 0 10px 16px;border-left:2px solid var(--neon-tief);margin-bottom:10px;color:var(--text-leise)}
-.profile{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0;padding:0}
-.profile a{display:inline-block;padding:8px 16px;border:1px solid var(--rand);border-radius:8px;color:var(--text)}
-.profile a:hover{border-color:var(--neon);color:var(--neon)}
-footer{border-top:1px solid var(--rand);padding:36px 0 46px;text-align:center}
-.fankit{margin:0 auto 14px;width:110px;opacity:.85}
-.fan{color:var(--text-leise);font-size:13px;max-width:680px;margin:0 auto 12px;line-height:1.5}
-.recht{color:#7a7a7a;font-size:13px}
-@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+.kachel h2{font-size:28px;margin:0}
+.kachel p{margin:0 0 18px;color:var(--leise);min-height:3.2em}
+.kachel:hover .knopf{border-color:var(--neon);color:var(--neon);background:var(--neon-dunkel)}
+.pfeil{width:1.1em;height:1.1em;background:currentColor;
+  -webkit-mask:url(arrow-right.svg) center/contain no-repeat;mask:url(arrow-right.svg) center/contain no-repeat}
 
-/* Phones: Safari on the iPhone floats its toolbar over the bottom of the page — leave room so
-   the last links scroll above it, and give them a tap area of about 30 points. */
-.recht a{display:inline-block;padding:7px 4px}
-@media (max-width:700px){footer{padding-bottom:110px}}
+/* ---------- Who is behind this ---------- */
+.ueber-spalten{display:grid;grid-template-columns:3fr 2fr;gap:48px;align-items:start}
+.ueber-text > p{margin:0 0 14px;max-width:40em}
+.einladen{margin-top:26px;padding:24px 26px;background:var(--flaeche)}
+.einladen p{margin:0 0 14px;color:var(--leise)}
+.einladen code{white-space:nowrap;color:var(--neon);font-size:.95em}
+.ref-meldung{margin:12px 0 0 !important;min-height:1.5em;font-size:15px;color:var(--neon) !important;overflow-wrap:anywhere}
+.grundsaetze{list-style:none;margin:0;padding:0}
+.grundsaetze li{padding:10px 0 10px 16px;border-left:2px solid var(--neon);margin-bottom:12px;color:var(--leise)}
+.profile{list-style:none;display:flex;flex-wrap:wrap;gap:12px;margin:36px 0 0;padding:0}
+.profile .knopf{font-size:15px;padding:9px 18px}
+
+@media (max-width:860px){
+  .kacheln{grid-template-columns:minmax(0,1fr)}
+  .ueber-spalten{grid-template-columns:minmax(0,1fr);gap:24px}
+}
+@media (max-width:640px){
+  .start{padding:40px 0 28px}
+  .kacheln{padding-bottom:64px;gap:20px}
+  .kachel{min-height:300px}
+  .kachel .inhalt{padding:22px}
+  .einladen{padding:20px}
+  .profile .knopf{min-height:44px}
+}
