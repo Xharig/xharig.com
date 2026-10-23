@@ -43,6 +43,7 @@
 .grundsaetze li{padding:10px 0 10px 16px;border-left:2px solid var(--neon);margin-bottom:12px;color:var(--leise)}
 .profile{list-style:none;display:flex;flex-wrap:wrap;gap:12px;margin:36px 0 0;padding:0}
 .profile .knopf{font-size:15px;padding:9px 18px}
+.profile img.ic{width:auto;height:1.15em}
 
 @media (max-width:860px){
   .kacheln{grid-template-columns:minmax(0,1fr)}
